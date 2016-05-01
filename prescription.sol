@@ -63,7 +63,7 @@ contract Prescription {
   /**
    * Set the details specific to this prescription 
    */
-  function setUpPrescriptionDetails(uint price, string lic, string drug, uint units, uint refills, uint quantity, address pharmacistaddress) {
+  function setUpPrescriptionDetails(string drug, uint quantity, address pharmacistaddress) {
     
     stateMessage = "Prescription details set";
     message = stateMessage;
@@ -71,12 +71,12 @@ contract Prescription {
     stateInt = 2;
 
     //details of the prescription
-    prescription_price = price;
-    license = lic;
+    //prescription_price = price;
+    //license = lic;
     drug_name = drug;
     drug_quantity = quantity;
-    drug_units = units;
-    drug_refills = refills;
+    //drug_units = units;
+    //drug_refills = refills;
     // dea = dea; secure ?
     // patientName = patient_name; // secure ?
     // medicalrecordnumber = medicalrecordnumber; //secure?
