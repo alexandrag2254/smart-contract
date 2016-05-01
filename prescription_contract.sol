@@ -43,13 +43,6 @@ contract Prescription {
    // 3) Patient brings private key to sign request for prescription 
 
 // ----------
- 
-  // blockapps js crypto -- ethereumjs-tx getsenderaddress of transaction - use it to create transaction 
-
-  // send transaction? request?
-
-// --------
-
 
   function Prescription() {
     physician = msg.physician;
