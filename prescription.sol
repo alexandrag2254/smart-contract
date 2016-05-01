@@ -52,7 +52,7 @@ contract Prescription {
 
 
   function Prescription() {
-    physician = msg.physician;
+    physician = msg.sender;
     stateMessage = "Uploaded prescription smart contract";
     stateInt = 1;
     message = stateMessage;
@@ -70,7 +70,7 @@ contract Prescription {
   /**
    * Set the details specific to this prescription 
    */
-  function setUpPrescriptionDetails(uint price, string lic, string drug, string units, string refills, string quantity, address pharmacistaddress) {
+  function setUpPrescriptionDetails(uint price, string lic, string drug, uint units, uint refills, uint quantity, address pharmacistaddress) {
     
     stateMessage = "Prescription details set";
     message = stateMessage;
